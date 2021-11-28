@@ -7,7 +7,7 @@ export const FlexCenter = css`
     align-items: center;
 `;
 
-export const FlexColum = css`
+export const FlexColumn = css`
     display: flex;
     flex-direction: column;
     align-items: center;
