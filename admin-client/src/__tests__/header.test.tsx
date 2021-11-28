@@ -11,3 +11,4 @@ test('should render header component',() => {
     expect(HeaderElement).toBeInTheDocument(); 
     expect(HeaderElement).toHaveTextContent("Hello World!")
 });
+
