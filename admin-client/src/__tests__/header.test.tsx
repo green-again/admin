@@ -10,4 +10,5 @@ test('should render header component',() => {
     const HeaderElement = screen.getByTestId("test1");
     expect(HeaderElement).toBeInTheDocument(); 
     expect(HeaderElement).toHaveTextContent("Hello World!")
-})
+});
+
