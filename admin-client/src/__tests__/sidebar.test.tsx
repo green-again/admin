@@ -6,7 +6,6 @@ afterEach(()=> {
 })
 
 test('should render sidebar component Menulist',()=> {
-    render(<Sidebar />);
     const utils = render(<Sidebar />);
     expect(utils.container).toHaveTextContent('Home')
     expect(utils.container).toHaveTextContent('Article')
