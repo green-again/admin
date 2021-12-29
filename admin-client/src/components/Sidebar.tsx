@@ -1,28 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { FlexColumn } from '../themes/flex';
 
 const Sidebar = () => {
-const [closeList, setCloseList] = useState<boolean>(false);
-
-const foldlist = () => {
-   setCloseList(!closeList)
-};
 
     return(
         <SidebarContainer>
         <MenuWrapper>
             <MenuItem>Home</MenuItem>
-            <MenuItem onClick={foldlist}>
-            Content
-            </MenuItem>
-            {!closeList ? (
-                <>
-                <ItemList>ArticleCategory</ItemList>
-                <ItemList>ArticleCreate</ItemList>
-                <ItemList>ArticleDetail</ItemList>
-                </>
-            ): null}
+            <MenuItem>Article</MenuItem>
             <MenuItem>Setting</MenuItem>
             <MenuItem>Login</MenuItem>
         </MenuWrapper>
@@ -53,22 +39,5 @@ const MenuItem = styled.li`
             color: #adb5bd;
         }
 `;
-
-const ItemList = styled.div`
-    margin-top: 2rem;
-    padding-left: 1rem;
-    font-size: 1rem;
-    color: white;
-    cursor: pointer;
-    :hover{
-        color: #adb5bd;
-    }
-    details{
-        transition: 0.8s;
-        outline: none;
-    }
-`;
-
-
 
 export default Sidebar;
