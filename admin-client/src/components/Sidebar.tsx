@@ -1,14 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { FlexColumn } from '../themes/flex';
 
 const Sidebar = () => {
+const navigate = useNavigate();
 
     return(
         <SidebarContainer>
         <MenuWrapper>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>Article</MenuItem>
+            <MenuItem onClick={()=> navigate('/')}>Home</MenuItem>
+            <MenuItem onClick={()=> navigate('/articles')}>Article</MenuItem>
             <MenuItem>Setting</MenuItem>
             <MenuItem>Login</MenuItem>
         </MenuWrapper>
