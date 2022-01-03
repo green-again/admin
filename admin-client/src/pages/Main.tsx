@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const Main = () => {
     return(
-        <Container>
+        <MainContainer>
         <div>This is Main!</div>
-        </Container>
+        </MainContainer>
     );
 };
 
 
-const Container = styled.div`
+const MainContainer = styled.div`
     display: flex;
 `;
 
